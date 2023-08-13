@@ -37,9 +37,8 @@ const changePage = (newpage: string) => {
 
 <style lang='scss'>
 .menu {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 415px;
+  // display: flex;
+  // flex-direction: column;
+  width: $gb-width;
 }
 </style>

@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   typescript: {
-    shim: false
+    shim: false,
   },
   app: {
     head: {
-      title: "Hello",
+      title: "Papyrus",
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
 

@@ -1,34 +1,32 @@
 <template>
-  <div class="open-container">
+  <div class="new-container full">
     <div>
-      <div class="open flex-c-adjust">
-        <h1>Open</h1>
+      <div class="new flex-c-adjust">
 
-        <ImageDisplay />
-        
-        <ProjectList />
+        <h1>New</h1>
+        <ImageInput />
+
+        <InputLabel label="Title" color="dark" />
+        <InputLabel label="Description" :textarea="true" color="dark" />
 
         <div class="container buttons">
-          <Button name="Open" color="red" />
-          <Button name="Return" color="blue" link="/" class="padding-15" />
+          <Button name="Create" color="blue" />
+          <Button name="Return" color="red" link="/" class="padding-15" />
         </div>
       </div>
     </div>
   </div>
 </template>
 
-
-
 <script lang="ts" setup>
-
 useHead({
-  title: 'Open',
+  title: 'New',
 })
 
 </script>
 
 <style lang='scss' scoped>
-.open-container {
+.new-container {
   display: grid;
   place-items: center;
   height: 100vh;
@@ -36,7 +34,8 @@ useHead({
   gap: 20px;
 }
 
-.open {
+
+.new {
   height: 100%;
   width: $gb-width;
   font-family: Lato;
@@ -55,5 +54,3 @@ useHead({
   justify-content: space-between;
 }
 </style>
-
-

@@ -1,6 +1,6 @@
 <template>
   
-  <div class="container">
+  <div class="container full flex-c flex-c-adjust">
       <Main :name="user.name" class="menu-box"/>
       <!-- <ProjectList :project-list="Object.keys(data.projects)"/> -->
   </div>
@@ -12,37 +12,16 @@
 
 import UserData from "../types/UserData"
 
-  // const user: UserData = {
-  //   name: "Adrian",
-  //   lastProject: "Chronos",
-  //   projects: {
-  //     "Chronos": {
-  //       "desc": "",
-  //       "current": "",
-  //       "folders": {
-  //         "Chapters": [
-  //           "chapter 1"
-  //         ],
-  //         "Lore": [
-  //           "setting"
-  //         ]
-  //       }
-  //     }
-  //   }
-  // }
 
   const { data } = await useFetch<UserData>('/api/user') 
   const user = ref(data) as unknown as UserData
 
-  
+  console.log(user.name)
+
 </script>
 
 <style lang='scss'>
-  .menu-box {
-    margin-top: 100px;
-    margin-right: 70px;
 
-  }
 
 
 </style>

@@ -53,9 +53,9 @@
     background: linear-gradient(125deg, $red-color 35%, $red-linear-color 100%);
   }
 
-  .nuxtlink {
-    padding-top: 15px;
-  }
+  // .nuxtlink {
+  //   // padding-top: 15px;
+  // }
 
   .send {
     width: 100%;

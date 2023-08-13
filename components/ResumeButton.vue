@@ -1,6 +1,6 @@
 
 <template>
-  <div class="container menu-style resume">
+  <div class="container menu-style resume" @click="router.push('/write')">
     <h1 class="folder">{{ folderName }}</h1>
     <span class="note">{{ noteName }}</span>
     <span class="text">{{ text }}</span>
@@ -14,6 +14,8 @@
     noteName: { type: String, default: "Chapter 1" },
     text: { type: String,  default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, " }
   })  
+
+  const router = useRouter()
   
 </script>
 

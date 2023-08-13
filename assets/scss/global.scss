@@ -17,13 +17,22 @@ body {
   justify-content: center;
 }
 
+.full {
+  height: 100vh;
+  width: 100%;
+}
+
 .flex-column {
   flex-direction: column;
 }
 
 .flex-c {
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.flex-c-adjust {
+  margin-top: -50px;
 }
 
 .flex-s {
@@ -34,6 +43,13 @@ body {
   justify-content: flex-end;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
 
 .creon-style {
   @include creon;
@@ -42,8 +58,6 @@ body {
 .prevent-select {
   user-select: none;
 }
-
-
 
 .menu-style {
   @include creon;
@@ -56,4 +70,8 @@ body {
     transition: 0.05s ease-in-out;
     transform: scale(0.95);
   }
+}
+
+.hide {
+  display:  none;
 }
