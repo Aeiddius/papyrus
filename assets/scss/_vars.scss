@@ -1,0 +1,46 @@
+$bg-color: #232323; 
+$text-color: #ffffff;
+
+
+$bg-color: #ffffff; 
+$text-color: #232323;
+
+$primary-color: #5c62ff;
+
+
+// Colors
+$blue-color: #5c62ff;
+$blue-linear-color: #4faaff;
+
+$red-color: #ff5c5c;
+$red-linear-color: #ed8260;
+
+$green-color: #67D55D;
+$green-linear-color: #5DD5A3;
+
+
+$white-color: #ffffff;
+$white-linear-color: #dadeff;
+
+$dark-color: #2a2a2a;
+
+// Global Variables
+$gb-border-radius: 10px;
+$gb-padding-value: 17px;
+
+
+
+
+@mixin creon {
+  border: none;
+  user-select: none;
+  font-family: Lato Bold;
+  border-radius: $gb-border-radius;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.2s ease-in-out;
+  text-shadow: 2px 2px #0000002d;
+  color: #ffffff;
+}
+

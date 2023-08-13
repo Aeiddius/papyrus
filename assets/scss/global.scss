@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'fonts';
+@import 'utility';
+
+
+* {
+  font-family: Lato;
+}
+
+body {
+  color: $text-color;
+  background-color: $bg-color;
+} 
+ 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-c {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-s {
+  justify-content: flex-start;
+}
+
+.flex-e {
+  justify-content: flex-end;
+}
+
+
+.creon-style {
+  @include creon;
+} 
+
+.prevent-select {
+  user-select: none;
+}
+
+
+
+.menu-style {
+  @include creon;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transition: 0.05s ease-in-out;
+    transform: scale(0.95);
+  }
+}
