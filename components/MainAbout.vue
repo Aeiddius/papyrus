@@ -25,12 +25,13 @@
     padding: $gb-padding-value  + 5px;
     background: $red-color;
     background: linear-gradient(125deg, $red-color 35%, $red-linear-color 100%);
+
+                       
     cursor: auto;
     h1 {
       text-align: center;
       margin-bottom: 10px;
     }
-
     p {
       font-family: Lato Light;
       font-size: 16px;

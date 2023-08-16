@@ -75,3 +75,28 @@ body {
 .hide {
   display:  none;
 }
+
+
+
+
+
+
+
+
+/// Test
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+
+
+.lc {
+  flex-direction: column !important;
+}
+
+.l-adjust {
+  margin-top: 100px;
+}

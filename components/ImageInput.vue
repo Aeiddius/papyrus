@@ -32,8 +32,8 @@ const showPreview = (event: any) => {
   background-color: grey;
   margin-bottom: 5px;
   border-radius: $gb-border-radius;
-  background: $grey-color;
-  background: linear-gradient(125deg, $grey-color 35%, $grey-linear-color 100%);
+  background: $dark-color;
+  background: linear-gradient(125deg, $dark-color 35%, $dark-linear-color 100%);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
   .preview-text {
@@ -59,21 +59,31 @@ input[type="file"]::file-selector-button {
   margin-right: 20px;
   border: none;
   display: inline-block;
-  background: $white-color;
-  padding: 4px;
+  // background: $white-color;
+  padding: 10px 20px 10px 20px;
   border-radius: 7px;
   color: $dark-color;
   cursor: pointer;
   transition: 0.4s linear;
-  border: 1px solid $dark-color;
+  // border: 1px solid $dark-color;
+  font-family: Lato Bold;
+  text-shadow: 2px 2px #0000002d;
 
+  border: none;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-
+  color: $white-color;
+  background: $blue-color;
+  background: linear-gradient(125deg, $blue-color 35%, $blue-linear-color 100%);
   &:hover {
     color: $white-color;
     background: $blue-color;
     background: linear-gradient(125deg, $blue-color 35%, $blue-linear-color 100%);
   }
+}
+
+input[type="file"]::file-selector-button {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
 
 </style>

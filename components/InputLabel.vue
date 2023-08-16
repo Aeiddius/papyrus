@@ -59,10 +59,7 @@ const props = defineProps({
     resize: vertical;
     min-height: 100px;
 
-    &:focus {
-      outline: none;
-      border: 2px solid transparent;
-    }
+
   }
 
 
@@ -70,5 +67,6 @@ const props = defineProps({
 
 .dark {
   color: $dark-color !important;
+  // border: 1px solid $blue-color !important;
 }
 </style>

@@ -43,8 +43,8 @@ const showPreview = (event: any) => {
   background-color: grey;
   margin-bottom: 5px;
   border-radius: $gb-border-radius;
-  background: $grey-color;
-  background: linear-gradient(125deg, $grey-color 35%, $grey-linear-color 100%);
+  background: $dark-color;
+  background: linear-gradient(125deg, $dark-color 35%, $dark-linear-color 100%);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
   .preview-text {

@@ -1,9 +1,12 @@
 <template>
-  <div class="container flex-column full flex-c top">
-    <div class="container flex-column write">
+  <Sidebar/>
+  <div class="">
+    <div class="layout lc write">
+
       <span class="folder-name">{{ folderName }}</span>
       <span class="note-name">{{ noteName }}</span>
       <textarea class="text-content" placeholder="Write here">{{ text }}</textarea>
+
     </div>
   </div>
 </template>
@@ -26,18 +29,20 @@ const props = defineProps({
 .write {
   color: $dark-color;
   font-family: Lato;
-  width: $gb-width;
-  margin-top: 100px;
-  gap: 5px;
+  width: 50vw;
+  gap: 10px;
+  margin-left: 250px;
+  margin-top: -100px;
+  .folder-name {
+    font-size: 16px;
+  }
+
+  .note-name {
+    font-size: 28px;
+  }
 }
 
-.folder-name {
-  font-size: 16px;
-}
 
-.note-name {
-  font-size: 28px;
-}
 
 .text-content {
   font-size: 16px;
@@ -45,19 +50,10 @@ const props = defineProps({
   border: none;
   outline: none;
   resize: vertical;
-  color: $white-color;
-  padding: $gb-padding-value;
-  border-radius: $gb-border-radius;
-  background: $blue-color;
-  background: linear-gradient(125deg, $blue-color 35%, $blue-linear-color 100%);
-  box-shadow: rgba(60, 64, 67,  0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  
+  color: $dark-color;
+  // border: 1px solid $blue-color;
   &::placeholder {
     color: darken($white-color, 15%)
   }
-}
-
-textarea {
-  backdrop-filter: blur(8px);
 }
 </style>

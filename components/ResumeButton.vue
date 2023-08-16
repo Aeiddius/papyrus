@@ -29,7 +29,8 @@
     justify-content: flex-start;
 
     // Custom
-    background-color: #2a2a2a;
+    background: $dark-color;
+    background: linear-gradient(125deg, $dark-color 35%, $dark-linear-color 100%);
     color: #fff;
     width: 100%;
     height: fit-content;

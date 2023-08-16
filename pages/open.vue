@@ -1,19 +1,18 @@
 <template>
-  <div class="open-container">
-    <div>
-      <div class="open flex-c-adjust">
-        <h1>Open</h1>
+  <div class="layout lc">
+    <div class="open l-adjust">
+      <h1>Open</h1>
 
-        <ImageDisplay />
-        
-        <ProjectList />
+      <ImageDisplay />
 
-        <div class="container buttons">
-          <Button name="Open" color="red" />
-          <Button name="Return" color="blue" link="/" class="padding-15" />
-        </div>
+      <ProjectList />
+
+      <div class="container buttons">
+        <Button name="Open" color="red" />
+        <Button name="Return" color="blue" link="/" class="padding-15" />
       </div>
     </div>
+
   </div>
 </template>
 

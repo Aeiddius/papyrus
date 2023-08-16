@@ -1,19 +1,18 @@
 <template>
-  <div class="new-container full">
-    <div>
-      <div class="new flex-c-adjust">
+  <div class="layout">
+    
+    <div class="new l-adjust">
+      <h1>New</h1>
+      <ImageInput />
 
-        <h1>New</h1>
-        <ImageInput />
+      <InputLabel label="Title" color="dark" />
+      <InputLabel label="Description" :textarea="true" color="dark" />
 
-        <InputLabel label="Title" color="dark" />
-        <InputLabel label="Description" :textarea="true" color="dark" />
-
-        <div class="container buttons">
-          <Button name="Create" color="blue" />
-          <Button name="Return" color="red" link="/" class="padding-15" />
-        </div>
+      <div class="container buttons">
+        <Button name="Create" color="blue" />
+        <Button name="Return" color="red" link="/" class="padding-15" />
       </div>
+
     </div>
   </div>
 </template>
